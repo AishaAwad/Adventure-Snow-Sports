@@ -1,0 +1,557 @@
+.footer-content{
+    margin: 0;
+    padding: 0;
+    box-sizing: ;
+}
+#111
+#000
+section{
+    background: url(homepage1.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+.homepage1{
+    height: 309.5px;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+.p{
+
+}
+
+<div class="container">
+        <div class="left">
+            <img src="images/homepage1.png" alt="skiing photo">
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vel esse eveniet debitis corrupti
+                 quia recusandae officiis delectus expedita quae laborum obcaecati repellat tenetur possimus deserunt 
+                 odio, vero alias? Excepturi.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="right">
+            <img src="images/home page image 2.png" alt="skiing photo">
+        </div>
+        <div class="left">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vel esse eveniet debitis corrupti
+                 quia recusandae officiis delectus expedita quae laborum obcaecati repellat tenetur possimus deserunt 
+                 odio, vero alias? Excepturi.</p>
+        </div>
+    </div>
+    .container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+img{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px; 
+    margin-left: 100px;
+    
+    
+    
+
+}
+
+.row .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    .row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+
+    CODE FOR IMAGE AND TEXT WITH SPLIT THAT I MADE IN THE LIBRARY
+    HTML:
+        <div class="row">
+<div class="left">
+    <img class="homepage1" src="images/homepage1.png" alt="people skiing">
+</div>
+<div class="right">
+<div class="content">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reiciendis,
+     dolor repellat nobis fuga sapiente alias! Aperiam et nesciunt, eaque nihil nat
+     us ut non dolores error veniam debitis quasi in.Lorem ipsum dolor sit amet con
+     sectetur adipisicing elit. Praesentium reiciendis,dolor repellat nobis fuga sa
+     iente alias! Aperiam et nesciunt, eaque nihil natus ut non dolores error venia
+     m debitis quasi in.</p>
+</div>
+</div>
+    </div>
+
+
+
+    CSS:
+    .row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+.row .left{
+    overflow: hidden;
+}
+.row .left img{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    object-fit: cover;
+}
+.row .right{
+    display: flex;
+    align-items: center;
+}
+.row .right .content{
+    padding-left: 20px;
+}
+.row .right .content p{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    
+
+}
+@media{
+    (max-width: 991px) .row .rigt .content{
+        padding-left: 0;
+    }
+}
+@media(max-width: 768px) {
+    .row{
+        width: 90%;
+        grid-template-columns: 1fr;
+}
+}
+
+FOOTER CONTENT FOR LATER
+
+HTML
+
+<footer>
+        <div>
+            <div class="footer-content">
+                <h3>code opacity</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere, deleniti hic earum architecto voluptatum fugit labore modi inventore aliquam, suscipit,
+                 </p>
+                 <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+                 </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>copyright & copy 2023 made by <span>aisha awad</span> </p>
+            </div>
+    </footer>
+
+
+    CSS
+
+    footer{
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0082e6;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #0082e6;
+}
+.footer-bottom{
+    background: #2c3e50;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    opacity: .4;
+    font-weight: 200;
+}
+
+ABOUT PAGE SECTION 2 
+
+.about-container-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .about-section-2-image {
+    flex-basis: 50%;
+  }
+  
+  .about-section-2-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .about-section-2-text {
+    flex-basis: 50%;
+    padding-left: 50px;
+  }
+  
+  .about-section-2-text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-section-2-container {
+      flex-direction: column;
+    }
+  
+    .about-section-2-image,
+    .about-section-2-text {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-section-2-text {
+      padding-left: 0;
+      text-align: justify;
+    }
+  }
+
+
+  <div class="special-card">
+    <section class="cards-container">
+      <div class="card left">
+        <img class="card-img" src="https://picsum.photos/300/300?random=1">
+        <div class="card-content">
+          <h2 class="card-title">Card 1</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta ipsum. </p>
+          <button class="card-btn">Book Now</button>
+        </div>
+      </div>
+      
+      <div class="card middle">
+        <img class="card-img" src="https://picsum.photos/300/300?random=2">
+        <div class="card-content">
+          <h2 class="card-title">Card 2</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta ipsum. </p>
+          <button class="card-btn">Book Now</button>
+        </div>
+      </div>
+      
+      <div class="card right">
+        <img class="card-img" src="https://picsum.photos/300/300?random=3">
+        <div class="card-content">
+          <h2 class="card-title">Card 3</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at porta ipsum. </p>
+          <button class="card-btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+</div>
+
+/*responsive card*/
+ .cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 100%;
+}
+
+.special-card {
+	flex-basis: calc(33.33% - 20px);
+	background-color: #fff;
+	margin-bottom: 20px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.special-card-img {
+	width: 100%;
+	height: auto;
+}
+
+.special-card-content {
+	padding: 20px;
+}
+
+.special-card-title {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.special-card-text {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.special-card-btn {
+	background-color: #0095ff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.left {
+	flex-basis: calc(50% - 10px);
+}
+
+.middle {
+	flex-basis: calc(33.33% - 20px);
+}
+
+.right {
+	flex-basis: calc(16.66% - 10px);
+}
+/*embedded youtube video*/
+.video-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-container {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+  
+  .card-image {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .card-image img {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card-content p {
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #333;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card {
+      flex-direction: row;
+    }
+  
+    .card-image {
+      width: 50%;
+      padding: 30px;
+    }
+  
+    .card-content {
+      width: 50%;
+      text-align: left;
+      padding: 30px;
+    }
+  
+    .button {
+      margin-top: 20px;
+      display: inline-block;
+    }
+  }
+
+
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="images/home page image 2.png" alt="My Image">
+      </div>
+      <div class="card-content">
+        <p>Welcome to our snow sport adventure page! Get ready to experience the thrill of skiing, snowboarding, and other winter sports in some of the most breathtaking locations around the world. Whether you're a seasoned pro or a beginner, we offer a wide range of options to suit all skill levels. From powdery slopes to icy peaks, our carefully curated packages are designed to provide you with the ultimate winter adventure. So grab your gear, hit the slopes, and let the adrenaline flow!</p>
+        <a href="https://example.com/another-page" class="button">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="images/home page image 2.png" alt="My Image">
+      </div>
+      <div class="card-content">
+        <p>Here is a short description of my image.</p>
+        <a href="https://example.com/another-page" class="button">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-container">
+        <div class="about-image">
+          <img src="images/staff page image.png" alt="Image">
+        </div>
+        <div class="about-text">
+          <p>Hi there, I'm Nabila, and I'm the founder of a sports adventure company that offers a range of exciting activities, from skiing and snowboarding to hiking and rock climbing. Our company is dedicated to providing the ultimate adventure experience, and we're committed to ensuring that our clients have the time of their lives. With over a decade of experience in the sports industry, I founded this company with the goal of sharing my passion for sports and adventure with others. We offer a range of services, including guided tours, equipment rental, and expert instruction, so whether you're a seasoned pro or a complete beginner, we've got you covered.
+
+            At our ski resort, we offer top-of-the-line equipment and world-class instruction, with courses for skiers and snowboarders of all levels. Our expert instructors are passionate about sharing their knowledge and experience with our clients, and they're committed to helping you reach your full potential on the slopes. And if skiing isn't your thing, we also offer snowshoeing and other winter activities that are perfect for families and groups.
+            
+            In the summer months, we offer a range of activities for adventure-seekers, including hiking and rock climbing. Our guided tours take you through some of the most breathtaking landscapes in the world, and our experienced guides are there to ensure your safety and help you make the most of your adventure. We also offer equipment rental, so you can be sure you're using top-quality gear that's been thoroughly tested and vetted by our team.
+            
+            Our company is dedicated to providing an unforgettable adventure experience, and we pride ourselves on our commitment to safety, professionalism, and excellence. We believe that everyone should have the opportunity to experience the thrill of adventure, and we're excited to share that with you. So whether you're a seasoned pro or a complete beginner, come join us for the adventure of a lifetime!</p>
+        </div>
+      </div>
+
+
+
+
+              <iframe width="560" height="315" src="https://www.youtube.com/watch?v=g0FMrjsYAzc" frameborder="0" allowfullscreen></iframe>
+
+
+
+ <label class="logo">Designx</label>
+
+ label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+    
+    
+  
+  }
+
+
+
+
+  from website canva .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #222;
+  color: #fff;
+  margin-top: 30px;
+}
